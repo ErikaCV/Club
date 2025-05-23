@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#9ACBD0"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/tituloInscripcion"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:layout_marginBottom="24dp"
+        android:gravity="center"
+        android:text="Inscribir en actividad a No socio"
+        android:textColor="#FFFFFF"
+        android:textSize="34sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/size"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Nombre"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextNombre"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_input"
+        android:padding="10dp"
+        android:hint="Juan Pérez"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="DNI"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <EditText
+        android:id="@+id/editTextDni"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/fondo_input"
+        android:hint="12345678"
+        android:inputType="number"
+        android:padding="10dp"
+        android:textColor="#000000"
+        android:textColorHint="#888888"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:text="Actividad"
+        android:textColor="#000000"
+        android:textSize="20sp" />
+
+    <Spinner
+        android:id="@+id/spinnerActividad"
+        android:layout_width="308dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/fondo_input"
+        android:padding="20dp" />
+
+    <Button
+        android:id="@+id/btnInscribirse"
+        android:layout_width="307dp"
+        android:layout_height="58dp"
+        android:background="@drawable/boton_verde_oscuro_redondeado"
+        android:text="INSCRIBIRSE"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp"
+        app:backgroundTint="@null" />
+</LinearLayout>

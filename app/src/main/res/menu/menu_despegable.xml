@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/nav_inicio"
+        android:title="Inicio" />
+
+    <item
+        android:id="@+id/nav_inscribir_cliente"
+        android:title="Inscribir cliente" />
+
+    <item
+        android:id="@+id/nav_dar_baja"
+        android:title="Dar de baja" />
+
+    <item
+        android:id="@+id/nav_vencimientos"
+        android:title="Vencimientos" />
+
+    <item
+        android:id="@+id/nav_ver_cliente"
+        android:title="Ver cliente" />
+
+    <item
+        android:id="@+id/nav_inscribir_actividad"
+        android:title="Inscribir a actividad" />
+
+    <item
+        android:id="@+id/nav_ver_inscriptos"
+        android:title="Ver inscriptos" />
+
+    <item
+        android:id="@+id/nav_pago_cuota_mensual"
+        android:title="Pago de cuota mensual" />
+
+    <item
+        android:id="@+id/nav_pago_cuota_diaria"
+        android:title="Pago de cuota diaria" />
+
+    <item
+        android:id="@+id/nav_cerrar_sesion"
+        android:title="Cerrar sesión" />
+
+</menu>

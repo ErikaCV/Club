@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="56dp"
+    android:background="#FEEEC9"
+    android:orientation="horizontal"
+    android:paddingHorizontal="12dp"
+    android:gravity="center_vertical"
+    android:baselineAligned="false">
+
+
+    <ImageButton
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/flecha_derecha"
+        android:contentDescription="Volver" />
+
+
+    <ImageView
+        android:id="@+id/logoMenu"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/logo_menu"
+        android:scaleType="fitCenter"
+        android:adjustViewBounds="true"
+        android:contentDescription="Logo" />
+
+    <ImageButton
+        android:id="@+id/btnMenuToggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:src="@mipmap/menu_hamburgues"
+        android:contentDescription="Abrir menú" />
+</LinearLayout>

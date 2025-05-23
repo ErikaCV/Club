@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="#FFFFFF">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Bienvenido al Club Deportivo"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:gravity="center" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Clientes"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10dp"
+        android:paddingBottom="2dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:alignmentMode="alignMargins"
+        android:rowOrderPreserved="false">
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/boton_verde_claro_redondeado"
+            android:layout_margin="6dp"
+            android:padding="6dp">
+
+            <ImageButton
+                android:id="@+id/btnInscribirCliente"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/perso_mas" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inscribir"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/boton_verde_claro_redondeado"
+            android:layout_margin="6dp"
+            android:padding="6dp">
+
+            <ImageButton
+                android:id="@+id/btnDarBaja"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/person_menos" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Baja"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/boton_verde_claro_redondeado"
+            android:layout_margin="6dp"
+            android:padding="6dp">
+
+            <ImageButton
+                android:id="@+id/btnVerClientes"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/personas" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clientes"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/boton_verde_claro_redondeado"
+            android:layout_margin="6dp"
+            android:padding="6dp">
+
+            <ImageButton
+                android:id="@+id/btnVencimientos"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/triangulo_advertencia" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Vencimientos"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </GridLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Actividades"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10dp"
+        android:paddingBottom="2dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/boton_verde_intermedio_redondeado"
+            android:layout_margin="6dp"
+            android:padding="6dp">
+
+            <ImageButton
+                android:id="@+id/btnInscribirActividad"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/persona_pelota" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Actividad"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/boton_verde_intermedio_redondeado"
+            android:layout_margin="6dp"
+            android:padding="6dp">
+
+            <ImageButton
+                android:id="@+id/btnVerInscriptos"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/lupa" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Inscriptos"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </GridLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pagos"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingTop="10dp"
+        android:paddingBottom="2dp" />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:columnCount="2">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/boton_verde_oscuro_redondeado"
+            android:layout_margin="6dp"
+            android:padding="6dp">
+
+            <ImageButton
+                android:id="@+id/btnPagarCuotaDiaria"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/dinero" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuota diaria"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:background="@drawable/boton_verde_oscuro_redondeado"
+            android:layout_margin="6dp"
+            android:padding="6dp">
+
+            <ImageButton
+                android:id="@+id/btnPagarCuotaMensual"
+                android:layout_width="60dp"
+                android:layout_height="90dp"
+                android:background="@android:color/transparent"
+                android:src="@mipmap/almanaque" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cuota mensual"
+                android:textColor="@android:color/white"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </GridLayout>
+</LinearLayout>
+
+
+
+
+
