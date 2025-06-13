@@ -1,9 +1,35 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Base.Theme.ClubDeportivo" parent="Theme.Material3.DayNight.NoActionBar">
-        <!-- Customize your light theme here. -->
-        <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
+    <!-- 1. Tema base de tu aplicación (ya lo tienes, asegúrate que los colores referenciados existan) -->
+    <style name="Theme.ClubDeportivo" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Descomenta y ajusta según necesites -->
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryVariant">@color/purple_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <!-- <item name="colorSecondary">@color/teal_200</item> -->
+        <!-- <item name="colorSecondaryVariant">@color/teal_700</item> -->
+        <!-- <item name="colorOnSecondary">@color/black</item> -->
+        <!-- <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item> -->
     </style>
 
-    <style name="Theme.ClubDeportivo" parent="Base.Theme.ClubDeportivo" />
+    <!-- 2. Tema para la Splash Screen -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Obligatorio: Color de fondo de la splash screen -->
+        <item name="windowSplashScreenBackground">@color/splash_background_color</item> <!-- Asegúrate que @color/splash_background_color exista en colors.xml -->
+
+        <!-- Obligatorio: El ícono para la splash screen (tu logo) -->
+        <!-- Crea este drawable, por ejemplo, res/drawable/ic_splash_logo.xml (VectorDrawable) -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/ic_splash_logo</item>
+
+        <!-- Opcional: Duración de la animación del ícono (si es un AnimatedVectorDrawable) -->
+        <item name="windowSplashScreenAnimationDuration">1000</item> <!-- 1 segundo -->
+
+        <!-- Obligatorio: El tema que se aplicará DESPUÉS de que la splash screen desaparezca -->
+        <item name="postSplashScreenTheme">@style/Theme.ClubDeportivo</item>
+
+        <!-- Opcional (Android 12+): Imagen de marca en la parte inferior -->
+        <!-- <item name="android:windowSplashScreenBrandingImage">@drawable/ic_branding_logo</item> -->
+    </style>
 </resources>

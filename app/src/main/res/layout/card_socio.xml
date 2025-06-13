@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 86 mm × 54 mm (formato carnet) -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="86mm"
+    android:layout_height="54mm"
+    android:orientation="vertical"
+    android:padding="4mm"
+    android:background="#FFFFFF">
+
+    <!-- cabecera -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="*******  CARNET DE SOCIO  *******"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <!-- datos -->
+    <TextView
+        android:id="@+id/tvNombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tvDni"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tvDir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tvCel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"/>
+
+    <TextView
+        android:id="@+id/tvVto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"/>
+
+    <!-- pie -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="**********************************"
+        android:textAlignment="center"/>
+</LinearLayout>

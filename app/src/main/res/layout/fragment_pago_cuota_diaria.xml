@@ -90,6 +90,7 @@
                 android:textColorHint="#666666" />
 
             <Button
+                android:id="@+id/btnConsultar"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="36dp"
@@ -111,27 +112,17 @@
                 android:textSize="20sp" />
 
             <LinearLayout
-                android:layout_width="match_parent"
+                android:layout_width="280dp"
                 android:layout_height="wrap_content"
                 android:gravity="center"
                 android:orientation="horizontal"
-                android:weightSum="2">
+                android:weightSum="1">
 
-                <Button
-                    android:id="@+id/btnCerrar"
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginEnd="8dp"
-                    android:layout_weight="1"
-                    android:background="@drawable/boton_rojo_redondeado"
-                    android:text="Cerrar"
-                    android:textColor="#FFFFFF"
-                    android:textSize="20sp"
-                    app:backgroundTint="@null" />
+
 
                 <Button
                     android:id="@+id/btnPagar"
-                    android:layout_width="0dp"
+                    android:layout_width="82dp"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="8dp"
                     android:layout_weight="1"
@@ -140,7 +131,24 @@
                     android:textColor="#FFFFFF"
                     android:textSize="20sp"
                     app:backgroundTint="@null" />
+
+
             </LinearLayout>
+
+            <Button
+                android:id="@+id/btnReimprimir"
+                android:layout_width="216dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_weight="1"
+                android:background="@drawable/boton_verde_oscuro_redondeado"
+                android:text="Imprimir recibo"
+                android:textColor="#FFFFFF"
+                android:textSize="20sp"
+                android:visibility="gone"
+                app:backgroundTint="@null"
+                tools:visibility="visible" />
+
         </LinearLayout>
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
